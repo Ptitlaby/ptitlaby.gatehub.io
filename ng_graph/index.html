@@ -60,10 +60,21 @@ rect {
 }
 </style>
 <body>
-  <div id="scatter"></div>
-  <input type="button" name="reset" value="Reset View">
-  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <!-- <input type="button" class="btn btn-basic" name="reset" value="Reset View"> -->
+  <div id="scatter" class="svg-container"></div>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <script>
 var margin = { top: 50, right: 300, bottom: 50, left: 50 },
@@ -80,7 +91,6 @@ var y = d3.scale.linear()
 
 var xCat = "x",
     yCat = "y",
-    // rCat = "Protein (g)",
     colorCat = "flag";
     dotRadius = 3;
     dotOpacity = 0.5;
@@ -203,9 +213,15 @@ var xCat = "x",
       .on("mouseout", tip.hide)
       .on("click",function(d) { window.open(d.url, '_blank'); } );
 
-  var legend = svg.selectAll(".legend")
+  var legendHolder = svg.append('g')
+      // translate the holder to the right side of the graph
+      .attr('id','legend')
+      .attr('transform', "translate(" + (-width+20) + "," + (-0.5*margin.top) + ")")
+      .attr('class','legendHolder');
+
+  var legend = legendHolder.selectAll(".legend")
       .data(color.domain())
-    .enter().append("g")
+      .enter().append("g")
       .classed("legend", true)
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
@@ -222,6 +238,16 @@ var xCat = "x",
       .text(function(d) { return d; })
       .style('cursor','pointer')
       .style("font-size",20);
+
+
+  legend.attr('transform', function(d,i) {
+    return "translate("+(d3.sum(data, function(e,j) {
+      if (j < i) { return legend[0][j].getBBox().width; } else return 0; }) + 20 * i) + ",0)";
+  })
+
+  d3.select("#legend").append("g")
+    .html('<foreignObject width="1" height="1"><input type="button" class="btn btn-basic" id="reset" value="Reset View"></foreignObject>')
+    .attr('transform', "translate(1865,-15)");
 
   legend.on("mouseover", function(type) {
     var thisLeg = d3.select(this);
@@ -253,7 +279,7 @@ var xCat = "x",
     }
   });
 
-  d3.select("input").on("click", change);
+  d3.select("#reset").on("click", change);
 
   function change() {
     zoomBeh.x(x.domain([xMin, xMax])).y(y.domain([yMin, yMax]));
