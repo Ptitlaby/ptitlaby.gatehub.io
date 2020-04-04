@@ -3,12 +3,12 @@
         <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+
         <head>
             <link href="css/pmfun.css" rel="stylesheet" type="text/css" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         </head>
-        
+
         </head>
         <body>
 
@@ -16,7 +16,7 @@
           <input type="text" id="searchTxt" placeholder="Search.." name="search">
           <button id="searchBtn"><i class="fa fa-search"></i></button>
         </form>
-        
+
 
             <h3 id="npcHead" style='display:none'>NPCs</h3>
             <ul id='npcUL'>
@@ -8465,6 +8465,7 @@
             var filter, ul, li, a, i, txtValue, listIDs, npcHead, itemHead;
             listIds = ["npcUL", "itemUL"]
             filter = urlParams["search"].toUpperCase();
+
             document.getElementById("npcHead").style.display = "";
             document.getElementById("itemHead").style.display = "";
 
@@ -8473,15 +8474,30 @@
             ul = document.getElementById(listId);
             li = ul.getElementsByTagName('li');
 
-            for (i = 0; i < li.length; i++) {
-              a = li[i].getElementsByTagName("a")[0];
-              txtValue = a.textContent || a.innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-              } else {
-                li[i].style.display = "none";
-              }
-          }
+            if (filter.slice(0, 3) == "ID=") {
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                // console.log(a.href.split('/').pop().split('.html')[0]);
+                txtValue = a.href.split('/').pop().split('.html')[0];
+                if (txtValue.toUpperCase() == filter.split('=').pop()) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+            }
+            }
+            else {
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                // console.log(a.href.split('/').pop().split('.html')[0])
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+            }
+          };
           });
          }
 
@@ -8496,4 +8512,3 @@
 
         </body>
         </html>
-        
