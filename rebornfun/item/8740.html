@@ -752,10 +752,10 @@
 
                 function levelFilter() {
                   var npcLevel;
-                  var levelMin = document.getElementById("levelMin").value;
-                  var levelMax = document.getElementById("levelMax").value;
+                  var levelMin = parseInt(document.getElementById("levelMin").value);
+                  var levelMax = parseInt(document.getElementById("levelMax").value);
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
                     else { itemData.style.display = "" };
                   });
@@ -765,7 +765,7 @@
                   var levelMin = 100;
                   var levelMax = 0;
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if (npcLevel < levelMin) { levelMin = npcLevel };
                     if (npcLevel > levelMax) { levelMax = npcLevel };
 

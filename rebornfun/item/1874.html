@@ -961,6 +961,15 @@
         
 
                 <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20120.html" title="View Wolf drop and spoil">Wolf</a></td>
+                  <td class="npcLevel" align="left">4</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 389</td>
+                </tr>
+        
+
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20464.html" title="View Dungeon Skeleton drop and spoil">Dungeon Skeleton</a></td>
                   <td class="npcLevel" align="left">12</td>
                   <td class="npcAgro">Aggressive</td>
@@ -969,7 +978,7 @@
                 </tr>
         
 
-                <tr class="itemData">
+                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/20925.html" title="View Giant Araneid drop and spoil">Giant Araneid</a></td>
                   <td class="npcLevel" align="left">24</td>
                   <td class="npcAgro">Passive</td>
@@ -978,7 +987,7 @@
                 </tr>
         
 
-                <tr class="itemData" bgcolor=#1C425B>
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/21123.html" title="View Baar Dre Vanul Destroyer drop and spoil">Baar Dre Vanul Destroyer</a></td>
                   <td class="npcLevel" align="left">25</td>
                   <td class="npcAgro">Aggressive</td>
@@ -987,7 +996,7 @@
                 </tr>
         
 
-                <tr class="itemData">
+                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/22003.html" title="View Grave Robber Scout drop and spoil">Grave Robber Scout</a></td>
                   <td class="npcLevel" align="left">27</td>
                   <td class="npcAgro">Passive</td>
@@ -996,7 +1005,7 @@
                 </tr>
         
 
-                <tr class="itemData" bgcolor=#1C425B>
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20160.html" title="View Neer Crawler drop and spoil">Neer Crawler</a></td>
                   <td class="npcLevel" align="left">28</td>
                   <td class="npcAgro">Aggressive</td>
@@ -1005,7 +1014,7 @@
                 </tr>
         
 
-                <tr class="itemData">
+                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/20608.html" title="View Patin Archer drop and spoil">Patin Archer</a></td>
                   <td class="npcLevel" align="left">29</td>
                   <td class="npcAgro">Aggressive</td>
@@ -1014,7 +1023,7 @@
                 </tr>
         
 
-                <tr class="itemData" bgcolor=#1C425B>
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20616.html" title="View Rakin Undine drop and spoil">Rakin Undine</a></td>
                   <td class="npcLevel" align="left">30</td>
                   <td class="npcAgro">Passive</td>
@@ -1023,7 +1032,7 @@
                 </tr>
         
 
-                <tr class="itemData">
+                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/21667.html" title="View Otherworldly Invader Warrior drop and spoil">Otherworldly Invader Warrior</a></td>
                   <td class="npcLevel" align="left">33</td>
                   <td class="npcAgro">Aggressive</td>
@@ -1032,7 +1041,7 @@
                 </tr>
         
 
-                <tr class="itemData" bgcolor=#1C425B>
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/22021.html" title="View Bandit Undertaker drop and spoil">Bandit Undertaker</a></td>
                   <td class="npcLevel" align="left">34</td>
                   <td class="npcAgro">Passive</td>
@@ -1041,7 +1050,7 @@
                 </tr>
         
 
-                <tr class="itemData">
+                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/20193.html" title="View Tyrant Kingpin drop and spoil">Tyrant Kingpin</a></td>
                   <td class="npcLevel" align="left">36</td>
                   <td class="npcAgro">Aggressive</td>
@@ -1050,21 +1059,12 @@
                 </tr>
         
 
-                <tr class="itemData" bgcolor=#1C425B>
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20551.html" title="View Road Scavenger drop and spoil">Road Scavenger</a></td>
                   <td class="npcLevel" align="left">37</td>
                   <td class="npcAgro">Passive</td>
                   <td class="dropCount">1</td>
                   <td class="dropChance">4.3478%</td>
-                </tr>
-        
-
-                <tr class="itemData">
-                  <td class="npcName" align="left"><a href="../npc/20120.html" title="View Wolf drop and spoil">Wolf</a></td>
-                  <td class="npcLevel" align="left">4</td>
-                  <td class="npcAgro">Passive</td>
-                  <td class="dropCount">1</td>
-                  <td class="dropChance">1 / 389</td>
                 </tr>
         
 
@@ -1309,10 +1309,10 @@
 
                 function levelFilter() {
                   var npcLevel;
-                  var levelMin = document.getElementById("levelMin").value;
-                  var levelMax = document.getElementById("levelMax").value;
+                  var levelMin = parseInt(document.getElementById("levelMin").value);
+                  var levelMax = parseInt(document.getElementById("levelMax").value);
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
                     else { itemData.style.display = "" };
                   });
@@ -1322,7 +1322,7 @@
                   var levelMin = 100;
                   var levelMax = 0;
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if (npcLevel < levelMin) { levelMin = npcLevel };
                     if (npcLevel > levelMax) { levelMax = npcLevel };
 

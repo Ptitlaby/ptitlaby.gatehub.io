@@ -56,24 +56,6 @@
         
 
                 <tr class="itemData" bgcolor=#1C425B>
-                  <td class="npcName" align="left"><a href="../npc/20321.html" title="View Goblin Thief drop and spoil">Goblin Thief</a></td>
-                  <td class="npcLevel" align="left">10</td>
-                  <td class="npcAgro">Passive</td>
-                  <td class="dropCount">1</td>
-                  <td class="dropChance">1 / 531</td>
-                </tr>
-        
-
-                <tr class="itemData">
-                  <td class="npcName" align="left"><a href="../npc/20324.html" title="View Goblin Brigand Lieutenant drop and spoil">Goblin Brigand Lieutenant</a></td>
-                  <td class="npcLevel" align="left">10</td>
-                  <td class="npcAgro">Aggressive</td>
-                  <td class="dropCount">1</td>
-                  <td class="dropChance">1 / 521</td>
-                </tr>
-        
-
-                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/20307.html" title="View Garum Werewolf drop and spoil">Garum Werewolf</a></td>
                   <td class="npcLevel" align="left">9</td>
                   <td class="npcAgro">Passive</td>
@@ -89,46 +71,28 @@
                   <td class="dropCount">1</td>
                   <td class="dropChance">1 / 764</td>
                 </tr>
-        <tr></tr>
-
-                <tr>
-                  <td colspan="4" align="left"><b>Spoil</b></td>
-                </tr>
         
 
                 <tr class="itemData" bgcolor=#1C425B>
-                  <td class="npcName" align="left"><a href="../npc/20095.html" title="View Vampire Bat drop and spoil">Vampire Bat</a></td>
+                  <td class="npcName" align="left"><a href="../npc/20321.html" title="View Goblin Thief drop and spoil">Goblin Thief</a></td>
                   <td class="npcLevel" align="left">10</td>
                   <td class="npcAgro">Passive</td>
                   <td class="dropCount">1</td>
-                  <td class="dropChance">1.0638%</td>
+                  <td class="dropChance">1 / 531</td>
                 </tr>
         
 
                 <tr class="itemData">
-                  <td class="npcName" align="left"><a href="../npc/20313.html" title="View Rakeclaw Imp Chieftain drop and spoil">Rakeclaw Imp Chieftain</a></td>
-                  <td class="npcLevel" align="left">10</td>
-                  <td class="npcAgro">Aggressive</td>
-                  <td class="dropCount">1</td>
-                  <td class="dropChance">1.2987%</td>
-                </tr>
-        
-
-                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/20324.html" title="View Goblin Brigand Lieutenant drop and spoil">Goblin Brigand Lieutenant</a></td>
                   <td class="npcLevel" align="left">10</td>
                   <td class="npcAgro">Aggressive</td>
                   <td class="dropCount">1</td>
-                  <td class="dropChance">1.2987%</td>
+                  <td class="dropChance">1 / 521</td>
                 </tr>
-        
+        <tr></tr>
 
-                <tr class="itemData">
-                  <td class="npcName" align="left"><a href="../npc/20381.html" title="View Vaiss Orc drop and spoil">Vaiss Orc</a></td>
-                  <td class="npcLevel" align="left">10</td>
-                  <td class="npcAgro">Passive</td>
-                  <td class="dropCount">1</td>
-                  <td class="dropChance">1.0638%</td>
+                <tr>
+                  <td colspan="4" align="left"><b>Spoil</b></td>
                 </tr>
         
 
@@ -204,6 +168,42 @@
                 </tr>
         
 
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20095.html" title="View Vampire Bat drop and spoil">Vampire Bat</a></td>
+                  <td class="npcLevel" align="left">10</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1.0638%</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/20313.html" title="View Rakeclaw Imp Chieftain drop and spoil">Rakeclaw Imp Chieftain</a></td>
+                  <td class="npcLevel" align="left">10</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1.2987%</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20324.html" title="View Goblin Brigand Lieutenant drop and spoil">Goblin Brigand Lieutenant</a></td>
+                  <td class="npcLevel" align="left">10</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1.2987%</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/20381.html" title="View Vaiss Orc drop and spoil">Vaiss Orc</a></td>
+                  <td class="npcLevel" align="left">10</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1.0638%</td>
+                </tr>
+        
+
               </tbody></table>
             </td>
             <td background="../img/etc/tab_right_fon.gif"></td>
@@ -238,10 +238,10 @@
 
                 function levelFilter() {
                   var npcLevel;
-                  var levelMin = document.getElementById("levelMin").value;
-                  var levelMax = document.getElementById("levelMax").value;
+                  var levelMin = parseInt(document.getElementById("levelMin").value);
+                  var levelMax = parseInt(document.getElementById("levelMax").value);
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
                     else { itemData.style.display = "" };
                   });
@@ -251,7 +251,7 @@
                   var levelMin = 100;
                   var levelMax = 0;
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if (npcLevel < levelMin) { levelMin = npcLevel };
                     if (npcLevel > levelMax) { levelMax = npcLevel };
 

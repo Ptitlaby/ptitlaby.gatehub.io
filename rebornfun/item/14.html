@@ -56,15 +56,6 @@
         
 
                 <tr class="itemData" bgcolor=#1C425B>
-                  <td class="npcName" align="left"><a href="../npc/20361.html" title="View Tunath Orc Marksman drop and spoil">Tunath Orc Marksman</a></td>
-                  <td class="npcLevel" align="left">10</td>
-                  <td class="npcAgro">Passive</td>
-                  <td class="dropCount">1</td>
-                  <td class="dropChance">1 / 1,381</td>
-                </tr>
-        
-
-                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20006.html" title="View Orc Archer drop and spoil">Orc Archer</a></td>
                   <td class="npcLevel" align="left">8</td>
                   <td class="npcAgro">Passive</td>
@@ -73,7 +64,7 @@
                 </tr>
         
 
-                <tr class="itemData" bgcolor=#1C425B>
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20385.html" title="View Balor Orc Archer drop and spoil">Balor Orc Archer</a></td>
                   <td class="npcLevel" align="left">8</td>
                   <td class="npcAgro">Passive</td>
@@ -82,7 +73,7 @@
                 </tr>
         
 
-                <tr class="itemData">
+                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/20447.html" title="View Utuku Orc Archer drop and spoil">Utuku Orc Archer</a></td>
                   <td class="npcLevel" align="left">8</td>
                   <td class="npcAgro">Passive</td>
@@ -91,12 +82,21 @@
                 </tr>
         
 
-                <tr class="itemData" bgcolor=#1C425B>
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20469.html" title="View Kaboo Orc Archer drop and spoil">Kaboo Orc Archer</a></td>
                   <td class="npcLevel" align="left">8</td>
                   <td class="npcAgro">Passive</td>
                   <td class="dropCount">1</td>
                   <td class="dropChance">1 / 1,647</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20361.html" title="View Tunath Orc Marksman drop and spoil">Tunath Orc Marksman</a></td>
+                  <td class="npcLevel" align="left">10</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 1,381</td>
                 </tr>
         <tr></tr>
 
@@ -140,10 +140,10 @@
 
                 function levelFilter() {
                   var npcLevel;
-                  var levelMin = document.getElementById("levelMin").value;
-                  var levelMax = document.getElementById("levelMax").value;
+                  var levelMin = parseInt(document.getElementById("levelMin").value);
+                  var levelMax = parseInt(document.getElementById("levelMax").value);
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
                     else { itemData.style.display = "" };
                   });
@@ -153,7 +153,7 @@
                   var levelMin = 100;
                   var levelMax = 0;
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if (npcLevel < levelMin) { levelMin = npcLevel };
                     if (npcLevel > levelMax) { levelMax = npcLevel };
 

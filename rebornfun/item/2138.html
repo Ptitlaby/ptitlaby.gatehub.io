@@ -56,6 +56,15 @@
         
 
                 <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20326.html" title="View Goblin Scout drop and spoil">Goblin Scout</a></td>
+                  <td class="npcLevel" align="left">8</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 277</td>
+                </tr>
+        
+
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20093.html" title="View Orc Fighter drop and spoil">Orc Fighter</a></td>
                   <td class="npcLevel" align="left">10</td>
                   <td class="npcAgro">Aggressive</td>
@@ -64,21 +73,12 @@
                 </tr>
         
 
-                <tr class="itemData">
+                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/20427.html" title="View Evil Eye Watcher drop and spoil">Evil Eye Watcher</a></td>
                   <td class="npcLevel" align="left">10</td>
                   <td class="npcAgro">Passive</td>
                   <td class="dropCount">1</td>
                   <td class="dropChance">1 / 116</td>
-                </tr>
-        
-
-                <tr class="itemData" bgcolor=#1C425B>
-                  <td class="npcName" align="left"><a href="../npc/20326.html" title="View Goblin Scout drop and spoil">Goblin Scout</a></td>
-                  <td class="npcLevel" align="left">8</td>
-                  <td class="npcAgro">Passive</td>
-                  <td class="dropCount">1</td>
-                  <td class="dropChance">1 / 277</td>
                 </tr>
         <tr></tr>
 
@@ -130,10 +130,10 @@
 
                 function levelFilter() {
                   var npcLevel;
-                  var levelMin = document.getElementById("levelMin").value;
-                  var levelMax = document.getElementById("levelMax").value;
+                  var levelMin = parseInt(document.getElementById("levelMin").value);
+                  var levelMax = parseInt(document.getElementById("levelMax").value);
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
                     else { itemData.style.display = "" };
                   });
@@ -143,7 +143,7 @@
                   var levelMin = 100;
                   var levelMax = 0;
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if (npcLevel < levelMin) { levelMin = npcLevel };
                     if (npcLevel > levelMax) { levelMax = npcLevel };
 

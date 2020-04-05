@@ -56,15 +56,6 @@
         
 
                 <tr class="itemData" bgcolor=#1C425B>
-                  <td class="npcName" align="left"><a href="../npc/20480.html" title="View Blade Bat drop and spoil">Blade Bat</a></td>
-                  <td class="npcLevel" align="left">10</td>
-                  <td class="npcAgro">Passive</td>
-                  <td class="dropCount">1</td>
-                  <td class="dropChance">1 / 144</td>
-                </tr>
-        
-
-                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20446.html" title="View Utuku Orc drop and spoil">Utuku Orc</a></td>
                   <td class="npcLevel" align="left">6</td>
                   <td class="npcAgro">Passive</td>
@@ -73,7 +64,7 @@
                 </tr>
         
 
-                <tr class="itemData" bgcolor=#1C425B>
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20326.html" title="View Goblin Scout drop and spoil">Goblin Scout</a></td>
                   <td class="npcLevel" align="left">8</td>
                   <td class="npcAgro">Passive</td>
@@ -82,7 +73,7 @@
                 </tr>
         
 
-                <tr class="itemData">
+                <tr class="itemData" bgcolor=#1C425B>
                   <td class="npcName" align="left"><a href="../npc/20365.html" title="View Mountain Fungus drop and spoil">Mountain Fungus</a></td>
                   <td class="npcLevel" align="left">8</td>
                   <td class="npcAgro">Passive</td>
@@ -91,12 +82,21 @@
                 </tr>
         
 
-                <tr class="itemData" bgcolor=#1C425B>
+                <tr class="itemData">
                   <td class="npcName" align="left"><a href="../npc/20007.html" title="View Green Fungus drop and spoil">Green Fungus</a></td>
                   <td class="npcLevel" align="left">9</td>
                   <td class="npcAgro">Passive</td>
                   <td class="dropCount">1</td>
                   <td class="dropChance">1 / 173</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20480.html" title="View Blade Bat drop and spoil">Blade Bat</a></td>
+                  <td class="npcLevel" align="left">10</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 144</td>
                 </tr>
         <tr></tr>
 
@@ -148,10 +148,10 @@
 
                 function levelFilter() {
                   var npcLevel;
-                  var levelMin = document.getElementById("levelMin").value;
-                  var levelMax = document.getElementById("levelMax").value;
+                  var levelMin = parseInt(document.getElementById("levelMin").value);
+                  var levelMax = parseInt(document.getElementById("levelMax").value);
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
                     else { itemData.style.display = "" };
                   });
@@ -161,7 +161,7 @@
                   var levelMin = 100;
                   var levelMax = 0;
                   $.each(itemDatas, function(index, itemData) {
-                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
                     if (npcLevel < levelMin) { levelMin = npcLevel };
                     if (npcLevel > levelMax) { levelMax = npcLevel };
 
