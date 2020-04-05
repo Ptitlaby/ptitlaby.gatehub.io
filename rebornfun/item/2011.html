@@ -25,13 +25,25 @@
 
         <td valign="top" bgcolor="#1E4863">
               <table width="100%" border="0" cellpadding="5" cellspacing="0" class="show_list">
-                <tbody><tr><td colspan="4"><img src="../img/etc/blank.gif" height="8"><br><img src="../img/item/5-2011.jpg" align="absmiddle" class="img_border" alt="Short Spear Edge" title="Short Spear Edge">
+                <tbody id="itemDataTable"><tr><td colspan="4"><img src="../img/etc/blank.gif" height="8"><br><img src="../img/item/5-2011.jpg" align="absmiddle" class="img_border" alt="Short Spear Edge" title="Short Spear Edge">
         		<b class="txtbig">Short Spear Edge</b><br><img src="../img/etc/blank.gif" height="8"><br>
         
 
 
                     <tr>
                       <td class="first_line" align="left">NPC Name</td>
+                      <td class="first_line" align="left">Level
+                      <div class="popup">
+                          <img src="../img/etc/filter.png" height="15" style="cursor:pointer" onclick="myFunction()">
+                          <span class="popuptext" id="myPopup" style=>
+                            <div>
+                              <div>
+                                <input id="levelMin" type="number" min="1" max="90" value="1" onchange="levelFilter()"/> - <input id="levelMax" type="number" min="1" max="90" value="90" onchange="levelFilter()"/>
+                              </div>
+                            </div>
+                          </span>
+                      </div>
+                      </td>
                       <td class="first_line">Type</td>
                       <td class="first_line">Quantity</td>
                       <td class="first_line">Chance</td>
@@ -43,59 +55,66 @@
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/20029.html" title="View Ruin Zombie Leader drop and spoil">Ruin Zombie Leader</a> (16)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 556</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20029.html" title="View Ruin Zombie Leader drop and spoil">Ruin Zombie Leader</a></td>
+                  <td class="npcLevel" align="left">16</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 556</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/20105.html" title="View Dark Horror drop and spoil">Dark Horror</a> (16)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>1 / 618</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/20105.html" title="View Dark Horror drop and spoil">Dark Horror</a></td>
+                  <td class="npcLevel" align="left">16</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 618</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/20515.html" title="View Skeleton Infantryman drop and spoil">Skeleton Infantryman</a> (16)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 625</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20515.html" title="View Skeleton Infantryman drop and spoil">Skeleton Infantryman</a></td>
+                  <td class="npcLevel" align="left">16</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 625</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/20775.html" title="View Bugbear Raider drop and spoil">Bugbear Raider</a> (17)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 609</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/20775.html" title="View Bugbear Raider drop and spoil">Bugbear Raider</a></td>
+                  <td class="npcLevel" align="left">17</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 609</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/20457.html" title="View Zombie Soldier drop and spoil">Zombie Soldier</a> (19)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 505</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20457.html" title="View Zombie Soldier drop and spoil">Zombie Soldier</a></td>
+                  <td class="npcLevel" align="left">19</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 505</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/21125.html" title="View Northern Trimden drop and spoil">Northern Trimden</a> (19)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>1 / 562</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/21125.html" title="View Northern Trimden drop and spoil">Northern Trimden</a></td>
+                  <td class="npcLevel" align="left">19</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 562</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/20050.html" title="View Arachnid Predator drop and spoil">Arachnid Predator</a> (20)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>1 / 489</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20050.html" title="View Arachnid Predator drop and spoil">Arachnid Predator</a></td>
+                  <td class="npcLevel" align="left">20</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 489</td>
                 </tr>
         <tr></tr>
 
@@ -104,43 +123,48 @@
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/20389.html" title="View Boogle Ratman drop and spoil">Boogle Ratman</a> (16)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 221</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20389.html" title="View Boogle Ratman drop and spoil">Boogle Ratman</a></td>
+                  <td class="npcLevel" align="left">16</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 221</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/20038.html" title="View Venomous Spider drop and spoil">Venomous Spider</a> (18)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 157</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/20038.html" title="View Venomous Spider drop and spoil">Venomous Spider</a></td>
+                  <td class="npcLevel" align="left">18</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 157</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/20039.html" title="View Scavenger Wererat drop and spoil">Scavenger Wererat</a> (18)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 173</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20039.html" title="View Scavenger Wererat drop and spoil">Scavenger Wererat</a></td>
+                  <td class="npcLevel" align="left">18</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 173</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/20114.html" title="View Salamander Noble drop and spoil">Salamander Noble</a> (19)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 108</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/20114.html" title="View Salamander Noble drop and spoil">Salamander Noble</a></td>
+                  <td class="npcLevel" align="left">19</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 108</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/20223.html" title="View Mandragora Sprout drop and spoil">Mandragora Sprout</a> (20)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 147</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20223.html" title="View Mandragora Sprout drop and spoil">Mandragora Sprout</a></td>
+                  <td class="npcLevel" align="left">20</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 147</td>
                 </tr>
         
 
@@ -164,4 +188,41 @@
             </div>
         
 </tbody></table>
-</td></html>
+</td>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                function myFunction() {
+                  var popup = document.getElementById("myPopup");
+                  popup.classList.toggle("show");
+                };
+
+                var itemDataTable = document.getElementById("itemDataTable");
+                var itemDatas = itemDataTable.getElementsByClassName("itemData");
+
+                function levelFilter() {
+                  var npcLevel;
+                  var levelMin = document.getElementById("levelMin").value;
+                  var levelMax = document.getElementById("levelMax").value;
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
+                    else { itemData.style.display = "" };
+                  });
+                }
+
+                $(document).ready(function() {
+                  var levelMin = 100;
+                  var levelMax = 0;
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    if (npcLevel < levelMin) { levelMin = npcLevel };
+                    if (npcLevel > levelMax) { levelMax = npcLevel };
+
+                    document.getElementById("levelMin").value = levelMin;
+                    document.getElementById("levelMax").value = levelMax;
+                  });
+                })
+                </script>
+            
+</html>

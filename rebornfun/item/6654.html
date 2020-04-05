@@ -25,13 +25,25 @@
 
         <td valign="top" bgcolor="#1E4863">
               <table width="100%" border="0" cellpadding="5" cellspacing="0" class="show_list">
-                <tbody><tr><td colspan="4"><img src="../img/etc/blank.gif" height="8"><br><img src="../img/item/5-6654.jpg" align="absmiddle" class="img_border" alt="Scroll: Flames of Valakas" title="Scroll: Flames of Valakas">
+                <tbody id="itemDataTable"><tr><td colspan="4"><img src="../img/etc/blank.gif" height="8"><br><img src="../img/item/5-6654.jpg" align="absmiddle" class="img_border" alt="Scroll: Flames of Valakas" title="Scroll: Flames of Valakas">
         		<b class="txtbig">Scroll: Flames of Valakas</b><br><img src="../img/etc/blank.gif" height="8"><br>
         
 
 
                     <tr>
                       <td class="first_line" align="left">NPC Name</td>
+                      <td class="first_line" align="left">Level
+                      <div class="popup">
+                          <img src="../img/etc/filter.png" height="15" style="cursor:pointer" onclick="myFunction()">
+                          <span class="popuptext" id="myPopup" style=>
+                            <div>
+                              <div>
+                                <input id="levelMin" type="number" min="1" max="90" value="1" onchange="levelFilter()"/> - <input id="levelMax" type="number" min="1" max="90" value="90" onchange="levelFilter()"/>
+                              </div>
+                            </div>
+                          </span>
+                      </div>
+                      </td>
                       <td class="first_line">Type</td>
                       <td class="first_line">Quantity</td>
                       <td class="first_line">Chance</td>
@@ -43,43 +55,48 @@
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/29030.html" title="View Fenril Hound Kerinne drop and spoil">Fenril Hound Kerinne</a> (81)</td>
-                  <td>Passive</td>
-                  <td>18-54</td>
-                  <td>6.48%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/29030.html" title="View Fenril Hound Kerinne drop and spoil">Fenril Hound Kerinne</a></td>
+                  <td class="npcLevel" align="left">81</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">18-54</td>
+                  <td class="dropChance">6.48%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/29033.html" title="View Fenril Hound Freki drop and spoil">Fenril Hound Freki</a> (82)</td>
-                  <td>Passive</td>
-                  <td>18-54</td>
-                  <td>6.58%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/29033.html" title="View Fenril Hound Freki drop and spoil">Fenril Hound Freki</a></td>
+                  <td class="npcLevel" align="left">82</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">18-54</td>
+                  <td class="dropChance">6.58%</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/29036.html" title="View Fenril Hound Uruz drop and spoil">Fenril Hound Uruz</a> (83)</td>
-                  <td>Passive</td>
-                  <td>18-54</td>
-                  <td>6.68%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/29036.html" title="View Fenril Hound Uruz drop and spoil">Fenril Hound Uruz</a></td>
+                  <td class="npcLevel" align="left">83</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">18-54</td>
+                  <td class="dropChance">6.68%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/29037.html" title="View Fenril Hound Kinaz drop and spoil">Fenril Hound Kinaz</a> (84)</td>
-                  <td>Passive</td>
-                  <td>18-54</td>
-                  <td>6.77%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/29037.html" title="View Fenril Hound Kinaz drop and spoil">Fenril Hound Kinaz</a></td>
+                  <td class="npcLevel" align="left">84</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">18-54</td>
+                  <td class="dropChance">6.77%</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/29040.html" title="View Wings of Flame Ixion drop and spoil">Wings of Flame Ixion</a> (85)</td>
-                  <td>Passive</td>
-                  <td>18-54</td>
-                  <td>6.86%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/29040.html" title="View Wings of Flame Ixion drop and spoil">Wings of Flame Ixion</a></td>
+                  <td class="npcLevel" align="left">85</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">18-54</td>
+                  <td class="dropChance">6.86%</td>
                 </tr>
         <tr></tr>
 
@@ -109,4 +126,41 @@
             </div>
         
 </tbody></table>
-</td></html>
+</td>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                function myFunction() {
+                  var popup = document.getElementById("myPopup");
+                  popup.classList.toggle("show");
+                };
+
+                var itemDataTable = document.getElementById("itemDataTable");
+                var itemDatas = itemDataTable.getElementsByClassName("itemData");
+
+                function levelFilter() {
+                  var npcLevel;
+                  var levelMin = document.getElementById("levelMin").value;
+                  var levelMax = document.getElementById("levelMax").value;
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
+                    else { itemData.style.display = "" };
+                  });
+                }
+
+                $(document).ready(function() {
+                  var levelMin = 100;
+                  var levelMax = 0;
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    if (npcLevel < levelMin) { levelMin = npcLevel };
+                    if (npcLevel > levelMax) { levelMax = npcLevel };
+
+                    document.getElementById("levelMin").value = levelMin;
+                    document.getElementById("levelMax").value = levelMax;
+                  });
+                })
+                </script>
+            
+</html>

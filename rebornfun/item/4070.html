@@ -25,13 +25,25 @@
 
         <td valign="top" bgcolor="#1E4863">
               <table width="100%" border="0" cellpadding="5" cellspacing="0" class="show_list">
-                <tbody><tr><td colspan="4"><img src="../img/etc/blank.gif" height="8"><br><img src="../img/item/5-4070.jpg" align="absmiddle" class="img_border" alt="Stockings of Zubei Fabric" title="Stockings of Zubei Fabric">
+                <tbody id="itemDataTable"><tr><td colspan="4"><img src="../img/etc/blank.gif" height="8"><br><img src="../img/item/5-4070.jpg" align="absmiddle" class="img_border" alt="Stockings of Zubei Fabric" title="Stockings of Zubei Fabric">
         		<b class="txtbig">Stockings of Zubei Fabric</b><br><img src="../img/etc/blank.gif" height="8"><br>
         
 
 
                     <tr>
                       <td class="first_line" align="left">NPC Name</td>
+                      <td class="first_line" align="left">Level
+                      <div class="popup">
+                          <img src="../img/etc/filter.png" height="15" style="cursor:pointer" onclick="myFunction()">
+                          <span class="popuptext" id="myPopup" style=>
+                            <div>
+                              <div>
+                                <input id="levelMin" type="number" min="1" max="90" value="1" onchange="levelFilter()"/> - <input id="levelMax" type="number" min="1" max="90" value="90" onchange="levelFilter()"/>
+                              </div>
+                            </div>
+                          </span>
+                      </div>
+                      </td>
                       <td class="first_line">Type</td>
                       <td class="first_line">Quantity</td>
                       <td class="first_line">Chance</td>
@@ -43,83 +55,93 @@
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/25131.html" title="View Carnage Lord Gato drop and spoil">Carnage Lord Gato</a> (50)</td>
-                  <td>Passive</td>
-                  <td>40-120</td>
-                  <td>8.18%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/25131.html" title="View Carnage Lord Gato drop and spoil">Carnage Lord Gato</a></td>
+                  <td class="npcLevel" align="left">50</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">40-120</td>
+                  <td class="dropChance">8.18%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/25067.html" title="View Captain of Red Flag Shaka drop and spoil">Captain of Red Flag Shaka</a> (52)</td>
-                  <td>Passive</td>
-                  <td>40-120</td>
-                  <td>13.6%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/25067.html" title="View Captain of Red Flag Shaka drop and spoil">Captain of Red Flag Shaka</a></td>
+                  <td class="npcLevel" align="left">52</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">40-120</td>
+                  <td class="dropChance">13.6%</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/25509.html" title="View Dark Shaman Varangka drop and spoil">Dark Shaman Varangka</a> (53)</td>
-                  <td>Aggressive</td>
-                  <td>40-120</td>
-                  <td>9.4503%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/25509.html" title="View Dark Shaman Varangka drop and spoil">Dark Shaman Varangka</a></td>
+                  <td class="npcLevel" align="left">53</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">40-120</td>
+                  <td class="dropChance">9.4503%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/25010.html" title="View Furious Thieles drop and spoil">Furious Thieles</a> (55)</td>
-                  <td>Passive</td>
-                  <td>40-120</td>
-                  <td>13.82%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/25010.html" title="View Furious Thieles drop and spoil">Furious Thieles</a></td>
+                  <td class="npcLevel" align="left">55</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">40-120</td>
+                  <td class="dropChance">13.82%</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/25259.html" title="View Zaken's Butcher Krantz drop and spoil">Zaken's Butcher Krantz</a> (55)</td>
-                  <td>Passive</td>
-                  <td>440-1320</td>
-                  <td>3.14%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/25259.html" title="View Zaken's Butcher Krantz drop and spoil">Zaken's Butcher Krantz</a></td>
+                  <td class="npcLevel" align="left">55</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">440-1320</td>
+                  <td class="dropChance">3.14%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/22084.html" title="View Panthera drop and spoil">Panthera</a> (56)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>1 / 336</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/22084.html" title="View Panthera drop and spoil">Panthera</a></td>
+                  <td class="npcLevel" align="left">56</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 336</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/21154.html" title="View Hell Keeper Medusa drop and spoil">Hell Keeper Medusa</a> (58)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>1 / 114</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/21154.html" title="View Hell Keeper Medusa drop and spoil">Hell Keeper Medusa</a></td>
+                  <td class="npcLevel" align="left">58</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 114</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/18001.html" title="View Blood Queen drop and spoil">Blood Queen</a> (60)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>1 / 313</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/18001.html" title="View Blood Queen drop and spoil">Blood Queen</a></td>
+                  <td class="npcLevel" align="left">60</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 313</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/21022.html" title="View Fallen Orc Captain drop and spoil">Fallen Orc Captain</a> (60)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>1 / 264</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/21022.html" title="View Fallen Orc Captain drop and spoil">Fallen Orc Captain</a></td>
+                  <td class="npcLevel" align="left">60</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 264</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/21744.html" title="View Forbidden Path Invader Elite Soldier drop and spoil">Forbidden Path Invader Elite Soldier</a> (60)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1 / 548</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/21744.html" title="View Forbidden Path Invader Elite Soldier drop and spoil">Forbidden Path Invader Elite Soldier</a></td>
+                  <td class="npcLevel" align="left">60</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 548</td>
                 </tr>
         <tr></tr>
 
@@ -128,27 +150,30 @@
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/21523.html" title="View Flash of Splendor drop and spoil">Flash of Splendor</a> (61)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>9.0909%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/21523.html" title="View Flash of Splendor drop and spoil">Flash of Splendor</a></td>
+                  <td class="npcLevel" align="left">61</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">9.0909%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/21524.html" title="View Blade of Splendor drop and spoil">Blade of Splendor</a> (61)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>10%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/21524.html" title="View Blade of Splendor drop and spoil">Blade of Splendor</a></td>
+                  <td class="npcLevel" align="left">61</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">10%</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/20672.html" title="View Trives drop and spoil">Trives</a> (63)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>7.1429%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20672.html" title="View Trives drop and spoil">Trives</a></td>
+                  <td class="npcLevel" align="left">63</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">7.1429%</td>
                 </tr>
         
 
@@ -172,4 +197,41 @@
             </div>
         
 </tbody></table>
-</td></html>
+</td>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                function myFunction() {
+                  var popup = document.getElementById("myPopup");
+                  popup.classList.toggle("show");
+                };
+
+                var itemDataTable = document.getElementById("itemDataTable");
+                var itemDatas = itemDataTable.getElementsByClassName("itemData");
+
+                function levelFilter() {
+                  var npcLevel;
+                  var levelMin = document.getElementById("levelMin").value;
+                  var levelMax = document.getElementById("levelMax").value;
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
+                    else { itemData.style.display = "" };
+                  });
+                }
+
+                $(document).ready(function() {
+                  var levelMin = 100;
+                  var levelMax = 0;
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    if (npcLevel < levelMin) { levelMin = npcLevel };
+                    if (npcLevel > levelMax) { levelMax = npcLevel };
+
+                    document.getElementById("levelMin").value = levelMin;
+                    document.getElementById("levelMax").value = levelMax;
+                  });
+                })
+                </script>
+            
+</html>

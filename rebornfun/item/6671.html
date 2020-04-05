@@ -25,13 +25,25 @@
 
         <td valign="top" bgcolor="#1E4863">
               <table width="100%" border="0" cellpadding="5" cellspacing="0" class="show_list">
-                <tbody><tr><td colspan="4"><img src="../img/etc/blank.gif" height="8"><br><img src="../img/item/5-6671.jpg" align="absmiddle" class="img_border" alt="Deluxe Chest Key - Grade 7" title="Deluxe Chest Key - Grade 7">
+                <tbody id="itemDataTable"><tr><td colspan="4"><img src="../img/etc/blank.gif" height="8"><br><img src="../img/item/5-6671.jpg" align="absmiddle" class="img_border" alt="Deluxe Chest Key - Grade 7" title="Deluxe Chest Key - Grade 7">
         		<b class="txtbig">Deluxe Chest Key - Grade 7</b><br><img src="../img/etc/blank.gif" height="8"><br>
         
 
 
                     <tr>
                       <td class="first_line" align="left">NPC Name</td>
+                      <td class="first_line" align="left">Level
+                      <div class="popup">
+                          <img src="../img/etc/filter.png" height="15" style="cursor:pointer" onclick="myFunction()">
+                          <span class="popuptext" id="myPopup" style=>
+                            <div>
+                              <div>
+                                <input id="levelMin" type="number" min="1" max="90" value="1" onchange="levelFilter()"/> - <input id="levelMax" type="number" min="1" max="90" value="90" onchange="levelFilter()"/>
+                              </div>
+                            </div>
+                          </span>
+                      </div>
+                      </td>
                       <td class="first_line">Type</td>
                       <td class="first_line">Quantity</td>
                       <td class="first_line">Chance</td>
@@ -43,83 +55,93 @@
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/21763.html" title="View Dark Omen Invader Food drop and spoil">Dark Omen Invader Food</a> (70)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/21763.html" title="View Dark Omen Invader Food drop and spoil">Dark Omen Invader Food</a></td>
+                  <td class="npcLevel" align="left">70</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/21769.html" title="View Dark Omen Invader Elite Soldier drop and spoil">Dark Omen Invader Elite Soldier</a> (70)</td>
-                  <td>Aggressive</td>
-                  <td>3-9</td>
-                  <td>35.58%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/21769.html" title="View Dark Omen Invader Elite Soldier drop and spoil">Dark Omen Invader Elite Soldier</a></td>
+                  <td class="npcLevel" align="left">70</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">3-9</td>
+                  <td class="dropChance">35.58%</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/20829.html" title="View Platinum Tribe Overlord drop and spoil">Platinum Tribe Overlord</a> (71)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>5.85%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/20829.html" title="View Platinum Tribe Overlord drop and spoil">Platinum Tribe Overlord</a></td>
+                  <td class="npcLevel" align="left">71</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">5.85%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/21580.html" title="View Bone Caster drop and spoil">Bone Caster</a> (71)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1.43%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/21580.html" title="View Bone Caster drop and spoil">Bone Caster</a></td>
+                  <td class="npcLevel" align="left">71</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1.43%</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/21066.html" title="View Platinum Guardian Shaman drop and spoil">Platinum Guardian Shaman</a> (73)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>4.28%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/21066.html" title="View Platinum Guardian Shaman drop and spoil">Platinum Guardian Shaman</a></td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">4.28%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/21087.html" title="View Bloody Knight drop and spoil">Bloody Knight</a> (73)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>4.84%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/21087.html" title="View Bloody Knight drop and spoil">Bloody Knight</a></td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">4.84%</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/21770.html" title="View Dark Omen Invader Elite Soldier drop and spoil">Dark Omen Invader Elite Soldier</a> (73)</td>
-                  <td>Aggressive</td>
-                  <td>3-9</td>
-                  <td>39%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/21770.html" title="View Dark Omen Invader Elite Soldier drop and spoil">Dark Omen Invader Elite Soldier</a></td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">3-9</td>
+                  <td class="dropChance">39%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/21115.html" title="View Hames Orc Shaman drop and spoil">Hames Orc Shaman</a> (74)</td>
-                  <td>Passive</td>
-                  <td>1</td>
-                  <td>1.3%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/21115.html" title="View Hames Orc Shaman drop and spoil">Hames Orc Shaman</a></td>
+                  <td class="npcLevel" align="left">74</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1.3%</td>
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/21328.html" title="View Ketra Orc Scout drop and spoil">Ketra Orc Scout</a> (78)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>2.81%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/21328.html" title="View Ketra Orc Scout drop and spoil">Ketra Orc Scout</a></td>
+                  <td class="npcLevel" align="left">78</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">2.81%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/21354.html" title="View Varka Silenos Hunter drop and spoil">Varka Silenos Hunter</a> (78)</td>
-                  <td>Aggressive</td>
-                  <td>1</td>
-                  <td>2.81%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/21354.html" title="View Varka Silenos Hunter drop and spoil">Varka Silenos Hunter</a></td>
+                  <td class="npcLevel" align="left">78</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">2.81%</td>
                 </tr>
         <tr></tr>
 
@@ -128,19 +150,21 @@
                 </tr>
         
 
-                <tr bgcolor=#1C425B>
-                  <td align="left"><a href="../npc/21769.html" title="View Dark Omen Invader Elite Soldier drop and spoil">Dark Omen Invader Elite Soldier</a> (70)</td>
-                  <td>Aggressive</td>
-                  <td>1-3</td>
-                  <td>100%</td>
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left"><a href="../npc/21769.html" title="View Dark Omen Invader Elite Soldier drop and spoil">Dark Omen Invader Elite Soldier</a></td>
+                  <td class="npcLevel" align="left">70</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1-3</td>
+                  <td class="dropChance">100%</td>
                 </tr>
         
 
-                <tr>
-                  <td align="left"><a href="../npc/21770.html" title="View Dark Omen Invader Elite Soldier drop and spoil">Dark Omen Invader Elite Soldier</a> (73)</td>
-                  <td>Aggressive</td>
-                  <td>1-3</td>
-                  <td>100%</td>
+                <tr class="itemData">
+                  <td class="npcName" align="left"><a href="../npc/21770.html" title="View Dark Omen Invader Elite Soldier drop and spoil">Dark Omen Invader Elite Soldier</a></td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1-3</td>
+                  <td class="dropChance">100%</td>
                 </tr>
         
 
@@ -164,4 +188,41 @@
             </div>
         
 </tbody></table>
-</td></html>
+</td>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                function myFunction() {
+                  var popup = document.getElementById("myPopup");
+                  popup.classList.toggle("show");
+                };
+
+                var itemDataTable = document.getElementById("itemDataTable");
+                var itemDatas = itemDataTable.getElementsByClassName("itemData");
+
+                function levelFilter() {
+                  var npcLevel;
+                  var levelMin = document.getElementById("levelMin").value;
+                  var levelMax = document.getElementById("levelMax").value;
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
+                    else { itemData.style.display = "" };
+                  });
+                }
+
+                $(document).ready(function() {
+                  var levelMin = 100;
+                  var levelMax = 0;
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = $(itemData.getElementsByClassName("npcLevel")[0]).text();
+                    if (npcLevel < levelMin) { levelMin = npcLevel };
+                    if (npcLevel > levelMax) { levelMax = npcLevel };
+
+                    document.getElementById("levelMin").value = levelMin;
+                    document.getElementById("levelMax").value = levelMax;
+                  });
+                })
+                </script>
+            
+</html>
