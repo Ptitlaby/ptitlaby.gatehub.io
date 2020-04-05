@@ -8482,6 +8482,8 @@
                 txtValue = a.href.split('/').pop().split('.html')[0];
                 if (txtValue.toUpperCase() == filter.split('=').pop()) {
                   li[i].style.display = "";
+                  resultCount++;
+                  result = a.href;
                 } else {
                   li[i].style.display = "none";
                 }
@@ -8494,11 +8496,16 @@
                 txtValue = a.textContent || a.innerText;
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
                   li[i].style.display = "";
+                  resultCount++;
+                  result = a.href;
                 } else {
                   li[i].style.display = "none";
                 }
-            }
-          };
+              }
+            };
+
+            if (resultCount == 1) { window.location.replace(result); };
+
           });
          }
 
