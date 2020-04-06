@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+#searchbar {
+    position: fixed;
+    width: 100%;
+}
+
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
