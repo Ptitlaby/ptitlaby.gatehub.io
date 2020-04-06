@@ -44,6 +44,23 @@ form.example::after {
   display: table;
 }
 
+/* Map related CSS */
+.world_map_parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.world_map {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.spawn_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 body
 {
 	margin:0;
