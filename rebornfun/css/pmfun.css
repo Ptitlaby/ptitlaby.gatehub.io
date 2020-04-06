@@ -45,21 +45,21 @@ form.example::after {
 }
 
 /* Map related CSS */
-.world_map_parent {
+/* .world_map_parent {
   position: relative;
   top: 0;
   left: 0;
-}
-.world_map {
+} */
+/* .world_map {
   position: relative;
   top: 0;
   left: 0;
 }
 .spawn_overlay {
   position: absolute;
-  top: 0px;
-  left: 0px;
-}
+  top: 0;
+  left: 0;
+} */
 
 body
 {
