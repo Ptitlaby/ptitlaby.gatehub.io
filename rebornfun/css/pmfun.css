@@ -1,9 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
-#searchbar {
+div.searchbar {
     position: fixed;
     width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+div.content {
+width: 100%;
+padding-top:50px;
 }
 
 form.example input[type=text] {
@@ -18,7 +25,7 @@ form.example input[type=text] {
 form.example button {
   float: left;
   width: 20%;
-  padding: 10px;
+  padding: 11.5px;
   background: #2196F3;
   color: white;
   font-size: 17px;
