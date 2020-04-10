@@ -15,9 +15,30 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_stone_gray_i00.png' style='position:relative; top:10px;'>315x <a href='../item/3031.html'>Spirit Ore</a></li>
-	<li><img src='../img/icons/etc_gem_blue_i00.png' style='position:relative; top:10px;'>2x <a href='../item/4043.html'>Asofe</a></li>
-	<li><img src='../img/icons/etc_dragon_blood_i00.png' style='position:relative; top:10px;'>60x <a href='../item/8658.html'>Mysterious Solvent</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='8632'>
+	<li><img src='../img/icons/etc_stone_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 315x <a href='../item/3031.html'>Spirit Ore</a></li>
+	<li><img src='../img/icons/etc_gem_blue_i00.png' style='position:relative; top:10px;' class='img_border'> 2x <a href='../item/4043.html'>Asofe</a></li>
+	<li><img src='../img/icons/etc_dragon_blood_i00.png' style='position:relative; top:10px;' class='img_border'> 60x <a href='../item/8658.html'>Mysterious Solvent</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>

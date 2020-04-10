@@ -15,8 +15,32 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_spell_shot_blue_i01.png' style='position:relative; top:10px;'>1000x <a href='../item/3948.html'>Blessed Spiritshot: D-Grade</a></li>
-	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;'>125x <a href='../item/5192.html'>Rope of Magic: D-Grade</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='5263'>
+	<li><img src='../img/icons/etc_spell_shot_blue_i01.png' style='position:relative; top:10px;' class='img_border'> 1000x <a href='../item/3948.html'>Blessed Spiritshot: D-Grade</a> (<a href='../recipe/3948.html'>recipe</a>) <img src='../img/etc/expand.png' id='3948' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='3948' style = 'display:none'>
+	<li><img src='../img/icons/etc_stone_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 8x <a href='../item/3031.html'>Spirit Ore</a></li>
+	<li><img src='../img/icons/etc_crystal_blue_i00.png' style='position:relative; top:10px;' class='img_border'> 2x <a href='../item/1458.html'>Crystal: D-Grade</a></li>
+</ul></details>	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;' class='img_border'> 125x <a href='../item/5192.html'>Rope of Magic: D-Grade</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>

@@ -15,10 +15,31 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_recipe_green_i00.png' style='position:relative; top:10px;'>1x <a href='../item/7700.html'>Recipe: Daisy Hairpin (100%)</a></li>
-	<li><img src='../img/icons/etc_broken_crystal_green_i00.png' style='position:relative; top:10px;'>20x <a href='../item/7698.html'>Piece of Daisy Hairpin</a></li>
-	<li><img src='../img/icons/etc_fish_gem_i00.png' style='position:relative; top:10px;'>300x <a href='../item/6913.html'>Fish Gem</a></li>
-	<li><img src='../img/icons/etc_fish_gem_i01.png' style='position:relative; top:10px;'>150x <a href='../item/6914.html'>Shiny Fish Gem</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='7696'>
+	<li><img src='../img/icons/etc_recipe_green_i00.png' style='position:relative; top:10px;' class='img_border'> 1x <a href='../item/7700.html'>Recipe: Daisy Hairpin (100%)</a></li>
+	<li><img src='../img/icons/etc_broken_crystal_green_i00.png' style='position:relative; top:10px;' class='img_border'> 20x <a href='../item/7698.html'>Piece of Daisy Hairpin</a></li>
+	<li><img src='../img/icons/etc_fish_gem_i00.png' style='position:relative; top:10px;' class='img_border'> 300x <a href='../item/6913.html'>Fish Gem</a></li>
+	<li><img src='../img/icons/etc_fish_gem_i01.png' style='position:relative; top:10px;' class='img_border'> 150x <a href='../item/6914.html'>Shiny Fish Gem</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>

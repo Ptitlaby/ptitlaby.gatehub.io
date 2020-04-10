@@ -15,8 +15,32 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_spell_shot_gold_i01.png' style='position:relative; top:10px;'>1000x <a href='../item/3952.html'>Blessed Spiritshot: S Grade</a></li>
-	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;'>46x <a href='../item/5196.html'>Rope of Magic: S Grade</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='5267'>
+	<li><img src='../img/icons/etc_spell_shot_gold_i01.png' style='position:relative; top:10px;' class='img_border'> 1000x <a href='../item/3952.html'>Blessed Spiritshot: S Grade</a> (<a href='../recipe/3952.html'>recipe</a>) <img src='../img/etc/expand.png' id='3952' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='3952' style = 'display:none'>
+	<li><img src='../img/icons/etc_stone_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 50x <a href='../item/3031.html'>Spirit Ore</a></li>
+	<li><img src='../img/icons/etc_crystal_gold_i00.png' style='position:relative; top:10px;' class='img_border'> 2x <a href='../item/1462.html'>Crystal: S Grade</a></li>
+</ul></details>	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;' class='img_border'> 46x <a href='../item/5196.html'>Rope of Magic: S Grade</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>

@@ -15,10 +15,35 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_recipe_green_i00.png' style='position:relative; top:10px;'>1x <a href='../item/7001.html'>Recipe: Greater Dye of WIT (Wit+3 Men-3) (100%)</a></li>
-	<li><img src='../img/icons/etc_fish_oil_i02.png' style='position:relative; top:10px;'>12x <a href='../item/6910.html'>Premium Fish Oil</a></li>
-	<li><img src='../img/icons/etc_fang_gray_i00.png' style='position:relative; top:10px;'>130x <a href='../item/6915.html'>Thin Fish Bone</a></li>
-	<li><img src='../img/icons/etc_fang_ivory_i00.png' style='position:relative; top:10px;'>40x <a href='../item/6916.html'>Thick Fish Bone</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='4612'>
+	<li><img src='../img/icons/etc_recipe_green_i00.png' style='position:relative; top:10px;' class='img_border'> 1x <a href='../item/7001.html'>Recipe: Greater Dye of WIT (Wit+3 Men-3) (100%)</a></li>
+	<li><img src='../img/icons/etc_fish_oil_i02.png' style='position:relative; top:10px;' class='img_border'> 12x <a href='../item/6910.html'>Premium Fish Oil</a> (<a href='../recipe/6910.html'>recipe</a>) <img src='../img/etc/expand.png' id='6910' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='6910' style = 'display:none'>
+	<li><img src='../img/icons/etc_fish_oil_i01.png' style='position:relative; top:10px;' class='img_border'> 4x <a href='../item/6909.html'>Greater Fish Oil</a> (<a href='../recipe/6909.html'>recipe</a>) <img src='../img/etc/expand.png' id='6909' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='6909' style = 'display:none'>
+	<li><img src='../img/icons/etc_fish_oil_i00.png' style='position:relative; top:10px;' class='img_border'> 4x <a href='../item/6908.html'>Fish Oil</a></li>
+</ul></details></ul></details>	<li><img src='../img/icons/etc_fang_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 130x <a href='../item/6915.html'>Thin Fish Bone</a></li>
+	<li><img src='../img/icons/etc_fang_ivory_i00.png' style='position:relative; top:10px;' class='img_border'> 40x <a href='../item/6916.html'>Thick Fish Bone</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>

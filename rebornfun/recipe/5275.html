@@ -15,8 +15,32 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_spell_shot_red_i00.png' style='position:relative; top:10px;'>1000x <a href='../item/2512.html'>Spiritshot: B-grade</a></li>
-	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;'>100x <a href='../item/5194.html'>Rope of Magic: B-Grade</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='5259'>
+	<li><img src='../img/icons/etc_spell_shot_red_i00.png' style='position:relative; top:10px;' class='img_border'> 1000x <a href='../item/2512.html'>Spiritshot: B-grade</a> (<a href='../recipe/2512.html'>recipe</a>) <img src='../img/etc/expand.png' id='2512' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='2512' style = 'display:none'>
+	<li><img src='../img/icons/etc_stone_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 15x <a href='../item/3031.html'>Spirit Ore</a></li>
+	<li><img src='../img/icons/etc_crystal_red_i00.png' style='position:relative; top:10px;' class='img_border'> 1x <a href='../item/1460.html'>Crystal: B-Grade</a></li>
+</ul></details>	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;' class='img_border'> 100x <a href='../item/5194.html'>Rope of Magic: B-Grade</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>

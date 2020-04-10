@@ -15,11 +15,40 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_leather_gray_i00.png' style='position:relative; top:10px;'>7x <a href='../item/1942.html'>Manticore Skin Shirt Texture</a></li>
-	<li><img src='../img/icons/etc_leather_i00.png' style='position:relative; top:10px;'>84x <a href='../item/1882.html'>Leather</a></li>
-	<li><img src='../img/icons/etc_skein_gray_i00.png' style='position:relative; top:10px;'>42x <a href='../item/1884.html'>Cord</a></li>
-	<li><img src='../img/icons/etc_crystal_blue_i00.png' style='position:relative; top:10px;'>70x <a href='../item/1458.html'>Crystal: D-Grade</a></li>
-	<li><img src='../img/icons/etc_crystal_ball_silver_i00.png' style='position:relative; top:10px;'>17x <a href='../item/2130.html'>Gemstone D</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='395'>
+	<li><img src='../img/icons/etc_leather_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 7x <a href='../item/1942.html'>Manticore Skin Shirt Texture</a></li>
+	<li><img src='../img/icons/etc_leather_i00.png' style='position:relative; top:10px;' class='img_border'> 84x <a href='../item/1882.html'>Leather</a> (<a href='../recipe/1882.html'>recipe</a>) <img src='../img/etc/expand.png' id='1882' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='1882' style = 'display:none'>
+	<li><img src='../img/icons/etc_leather_brown_i00.png' style='position:relative; top:10px;' class='img_border'> 6x <a href='../item/1867.html'>Animal Skin</a></li>
+</ul></details>	<li><img src='../img/icons/etc_skein_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 42x <a href='../item/1884.html'>Cord</a> (<a href='../recipe/1884.html'>recipe</a>) <img src='../img/etc/expand.png' id='1884' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='1884' style = 'display:none'>
+	<li><img src='../img/icons/etc_lump_black_i00.png' style='position:relative; top:10px;' class='img_border'> 2x <a href='../item/1880.html'>Steel</a> (<a href='../recipe/1880.html'>recipe</a>) <img src='../img/etc/expand.png' id='1880' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='1880' style = 'display:none'>
+	<li><img src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> 5x <a href='../item/1865.html'>Varnish</a></li>
+	<li><img src='../img/icons/etc_lump_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 5x <a href='../item/1869.html'>Iron Ore</a></li>
+</ul></details>	<li><img src='../img/icons/etc_skein_white_i00.png' style='position:relative; top:10px;' class='img_border'> 25x <a href='../item/1868.html'>Thread</a></li>
+</ul></details>	<li><img src='../img/icons/etc_crystal_blue_i00.png' style='position:relative; top:10px;' class='img_border'> 70x <a href='../item/1458.html'>Crystal: D-Grade</a></li>
+	<li><img src='../img/icons/etc_crystal_ball_silver_i00.png' style='position:relative; top:10px;' class='img_border'> 17x <a href='../item/2130.html'>Gemstone D</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>

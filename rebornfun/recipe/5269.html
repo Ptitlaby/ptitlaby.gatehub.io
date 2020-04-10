@@ -15,8 +15,32 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_spirit_bullet_green_i00.png' style='position:relative; top:10px;'>1000x <a href='../item/1464.html'>Soulshot: C-grade</a></li>
-	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;'>25x <a href='../item/5193.html'>Rope of Magic: C-Grade</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='5252'>
+	<li><img src='../img/icons/etc_spirit_bullet_green_i00.png' style='position:relative; top:10px;' class='img_border'> 1000x <a href='../item/1464.html'>Soulshot: C-grade</a> (<a href='../recipe/1464.html'>recipe</a>) <img src='../img/etc/expand.png' id='1464' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='1464' style = 'display:none'>
+	<li><img src='../img/icons/etc_crystal_white_i00.png' style='position:relative; top:10px;' class='img_border'> 15x <a href='../item/1785.html'>Soul Ore</a></li>
+	<li><img src='../img/icons/etc_crystal_green_i00.png' style='position:relative; top:10px;' class='img_border'> 1x <a href='../item/1459.html'>Crystal: C-Grade</a></li>
+</ul></details>	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;' class='img_border'> 25x <a href='../item/5193.html'>Rope of Magic: C-Grade</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>

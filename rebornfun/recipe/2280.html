@@ -15,12 +15,40 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_squares_gray_i00.png' style='position:relative; top:10px;'>7x <a href='../item/2042.html'>Crucifix of Blood Piece</a></li>
-	<li><img src='../img/icons/etc_lump_black_i00.png' style='position:relative; top:10px;'>100x <a href='../item/1880.html'>Steel</a></li>
-	<li><img src='../img/icons/etc_powder_white_i00.png' style='position:relative; top:10px;'>200x <a href='../item/1881.html'>Coarse Bone Powder</a></li>
-	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;'>100x <a href='../item/1878.html'>Braided Hemp</a></li>
-	<li><img src='../img/icons/etc_crystal_blue_i00.png' style='position:relative; top:10px;'>430x <a href='../item/1458.html'>Crystal: D-Grade</a></li>
-	<li><img src='../img/icons/etc_crystal_ball_silver_i00.png' style='position:relative; top:10px;'>139x <a href='../item/2130.html'>Gemstone D</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='318'>
+	<li><img src='../img/icons/etc_squares_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 7x <a href='../item/2042.html'>Crucifix of Blood Piece</a></li>
+	<li><img src='../img/icons/etc_lump_black_i00.png' style='position:relative; top:10px;' class='img_border'> 100x <a href='../item/1880.html'>Steel</a> (<a href='../recipe/1880.html'>recipe</a>) <img src='../img/etc/expand.png' id='1880' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='1880' style = 'display:none'>
+	<li><img src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> 5x <a href='../item/1865.html'>Varnish</a></li>
+	<li><img src='../img/icons/etc_lump_gray_i00.png' style='position:relative; top:10px;' class='img_border'> 5x <a href='../item/1869.html'>Iron Ore</a></li>
+</ul></details>	<li><img src='../img/icons/etc_powder_white_i00.png' style='position:relative; top:10px;' class='img_border'> 200x <a href='../item/1881.html'>Coarse Bone Powder</a> (<a href='../recipe/1881.html'>recipe</a>) <img src='../img/etc/expand.png' id='1881' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='1881' style = 'display:none'>
+	<li><img src='../img/icons/etc_piece_bone_white_i00.png' style='position:relative; top:10px;' class='img_border'> 10x <a href='../item/1872.html'>Animal Bone</a></li>
+</ul></details>	<li><img src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;' class='img_border'> 100x <a href='../item/1878.html'>Braided Hemp</a> (<a href='../recipe/1878.html'>recipe</a>) <img src='../img/etc/expand.png' id='1878' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='1878' style = 'display:none'>
+	<li><img src='../img/icons/etc_branch_gold_i00.png' style='position:relative; top:10px;' class='img_border'> 5x <a href='../item/1864.html'>Stem</a></li>
+</ul></details>	<li><img src='../img/icons/etc_crystal_blue_i00.png' style='position:relative; top:10px;' class='img_border'> 430x <a href='../item/1458.html'>Crystal: D-Grade</a></li>
+	<li><img src='../img/icons/etc_crystal_ball_silver_i00.png' style='position:relative; top:10px;' class='img_border'> 139x <a href='../item/2130.html'>Gemstone D</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>

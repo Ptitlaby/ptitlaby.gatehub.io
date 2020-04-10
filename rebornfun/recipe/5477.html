@@ -15,9 +15,40 @@
             </div>
         
 <br><br><br><br>
-<ul>
-	<li><img src='../img/icons/etc_lump_yellow_i00.png' style='position:relative; top:10px;'>2x <a href='../item/4045.html'>Maestro Holder</a></li>
-	<li><img src='../img/icons/etc_reagent_red_i00.png' style='position:relative; top:10px;'>10x <a href='../item/4039.html'>Mold Glue</a></li>
-	<li><img src='../img/icons/etc_skein_white_i00.png' style='position:relative; top:10px;'>20x <a href='../item/1868.html'>Thread</a></li>
+<table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>
+<tbody>
+<tr>
+<td>
+<ul class='5554'>
+	<li><img src='../img/icons/etc_lump_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> 2x <a href='../item/4045.html'>Maestro Holder</a> (<a href='../recipe/4045.html'>recipe</a>) <img src='../img/etc/expand.png' id='4045' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='4045' style = 'display:none'>
+	<li><img src='../img/icons/etc_potion_clear_i00.png' style='position:relative; top:10px;' class='img_border'> 10x <a href='../item/1887.html'>Varnish of Purity</a> (<a href='../recipe/1887.html'>recipe</a>) <img src='../img/etc/expand.png' id='1887' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='1887' style = 'display:none'>
+	<li><img src='../img/icons/etc_powder_white_i00.png' style='position:relative; top:10px;' class='img_border'> 3x <a href='../item/1881.html'>Coarse Bone Powder</a> (<a href='../recipe/1881.html'>recipe</a>) <img src='../img/etc/expand.png' id='1881' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>
+<ul class='1881' style = 'display:none'>
+	<li><img src='../img/icons/etc_piece_bone_white_i00.png' style='position:relative; top:10px;' class='img_border'> 10x <a href='../item/1872.html'>Animal Bone</a></li>
+</ul></details>	<li><img src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> 3x <a href='../item/1865.html'>Varnish</a></li>
+	<li><img src='../img/icons/etc_crystal_ball_white_i00.png' style='position:relative; top:10px;' class='img_border'> 1x <a href='../item/1875.html'>Stone of Purity</a></li>
+</ul></details>	<li><img src='../img/icons/etc_reagent_gold_i00.png' style='position:relative; top:10px;' class='img_border'> 10x <a href='../item/4040.html'>Mold Lubricant</a></li>
+	<li><img src='../img/icons/etc_reagent_blue_i00.png' style='position:relative; top:10px;' class='img_border'> 10x <a href='../item/4041.html'>Mold Hardener</a></li>
+</ul></details>	<li><img src='../img/icons/etc_reagent_red_i00.png' style='position:relative; top:10px;' class='img_border'> 10x <a href='../item/4039.html'>Mold Glue</a></li>
+	<li><img src='../img/icons/etc_skein_white_i00.png' style='position:relative; top:10px;' class='img_border'> 20x <a href='../item/1868.html'>Thread</a></li>
 </ul>
+</td>
+<td valign='top'>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                  function myFunction(elem) {
+                    var ul = $(elem).parent().parent().find('.'+elem.id)[0];
+                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
+                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                  };
+                </script>
+            
 </html>
