@@ -30,6 +30,15 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=><img id='total_6913' src='../img/icons/etc_fish_gem_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/6913.html'>Fish Gem</a>
+	<li style=><img id='total_6914' src='../img/icons/etc_fish_gem_i01.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/6914.html'>Shiny Fish Gem</a>
+	<li style=><img id='total_8353' src='../img/icons/etc_giran_fish_scale_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/8353.html'>Green Colored Fish Scale</a>
+	<li style=><img id='total_8356' src='../img/icons/etc_innadrile_fish_scale_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/8356.html'>White Colored Fish Scale</a>
+	<li style=><img id='total_8358' src='../img/icons/etc_rune_fish_scale_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/8358.html'>Purple Colored Fish Scale</a>
+	<li style=><img id='total_8368' src='../img/icons/etc_recipe_green_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/8368.html'>Recipe: Artisan's Goggles (100%)</a>
+	<li style=><img id='total_8375' src='../img/icons/etc_leather_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/8375.html'>Artisan's Goggles Fabric</a>
+</ul>
 
 </td>
 </tr>
@@ -38,10 +47,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

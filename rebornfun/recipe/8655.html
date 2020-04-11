@@ -25,6 +25,10 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=><img id='total_1785' src='../img/icons/etc_crystal_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1785.html'>Soul Ore</a>
+	<li style=><img id='total_8658' src='../img/icons/etc_dragon_blood_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/8658.html'>Mysterious Solvent</a>
+</ul>
 
 </td>
 </tr>
@@ -33,10 +37,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

@@ -28,6 +28,12 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=><img id='total_2513' src='../img/icons/etc_spell_shot_silver_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2513.html'>Spiritshot: A-grade</a>
+	<li style=><img id='total_5195' src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/5195.html'>Rope of Magic: A-Grade</a>
+	<li style=display:none><img id='total_1461' src='../img/icons/etc_crystal_silver_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1461.html'>Crystal: A-Grade</a>
+	<li style=display:none><img id='total_3031' src='../img/icons/etc_stone_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/3031.html'>Spirit Ore</a>
+</ul>
 
 </td>
 </tr>
@@ -36,10 +42,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

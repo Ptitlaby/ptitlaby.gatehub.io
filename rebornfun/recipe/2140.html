@@ -27,6 +27,11 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=display:none><img id='total_1872' src='../img/icons/etc_piece_bone_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1872.html'>Animal Bone</a>
+	<li style=><img id='total_1881' src='../img/icons/etc_powder_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1881.html'>Coarse Bone Powder</a>
+	<li style=><img id='total_1866' src='../img/icons/etc_suede_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1866.html'>Suede</a>
+</ul>
 
 </td>
 </tr>
@@ -35,10 +40,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

@@ -40,6 +40,21 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=display:none><img id='total_1865' src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1865.html'>Varnish</a>
+	<li style=display:none><img id='total_1866' src='../img/icons/etc_suede_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1866.html'>Suede</a>
+	<li style=display:none><img id='total_1869' src='../img/icons/etc_lump_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1869.html'>Iron Ore</a>
+	<li style=display:none><img id='total_1870' src='../img/icons/etc_coal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1870.html'>Coal</a>
+	<li style=><img id='total_1879' src='../img/icons/etc_oil_pot_black_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1879.html'>Cokes</a>
+	<li style=display:none><img id='total_1871' src='../img/icons/etc_charcoal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1871.html'>Charcoal</a>
+	<li style=display:none><img id='total_1872' src='../img/icons/etc_piece_bone_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1872.html'>Animal Bone</a>
+	<li style=><img id='total_1458' src='../img/icons/etc_crystal_blue_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1458.html'>Crystal: D-Grade</a>
+	<li style=><img id='total_2130' src='../img/icons/etc_crystal_ball_silver_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2130.html'>Gemstone D</a>
+	<li style=><img id='total_2039' src='../img/icons/etc_sword_body_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2039.html'>Bich'Hwa Edge</a>
+	<li style=><img id='total_1880' src='../img/icons/etc_lump_black_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1880.html'>Steel</a>
+	<li style=display:none><img id='total_1881' src='../img/icons/etc_powder_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1881.html'>Coarse Bone Powder</a>
+	<li style=><img id='total_1885' src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1885.html'>High Grade Suede</a>
+</ul>
 
 </td>
 </tr>
@@ -48,10 +63,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

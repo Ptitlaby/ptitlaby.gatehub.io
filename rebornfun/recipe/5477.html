@@ -36,6 +36,18 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=><img id='total_4039' src='../img/icons/etc_reagent_red_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4039.html'>Mold Glue</a>
+	<li style=display:none><img id='total_4040' src='../img/icons/etc_reagent_gold_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4040.html'>Mold Lubricant</a>
+	<li style=display:none><img id='total_1865' src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1865.html'>Varnish</a>
+	<li style=display:none><img id='total_4041' src='../img/icons/etc_reagent_blue_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4041.html'>Mold Hardener</a>
+	<li style=><img id='total_1868' src='../img/icons/etc_skein_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1868.html'>Thread</a>
+	<li style=><img id='total_4045' src='../img/icons/etc_lump_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4045.html'>Maestro Holder</a>
+	<li style=display:none><img id='total_1872' src='../img/icons/etc_piece_bone_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1872.html'>Animal Bone</a>
+	<li style=display:none><img id='total_1875' src='../img/icons/etc_crystal_ball_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1875.html'>Stone of Purity</a>
+	<li style=display:none><img id='total_1881' src='../img/icons/etc_powder_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1881.html'>Coarse Bone Powder</a>
+	<li style=display:none><img id='total_1887' src='../img/icons/etc_potion_clear_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1887.html'>Varnish of Purity</a>
+</ul>
 
 </td>
 </tr>
@@ -44,10 +56,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

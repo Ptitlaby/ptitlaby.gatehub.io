@@ -35,6 +35,17 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=display:none><img id='total_1872' src='../img/icons/etc_piece_bone_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1872.html'>Animal Bone</a>
+	<li style=display:none><img id='total_1867' src='../img/icons/etc_leather_brown_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1867.html'>Animal Skin</a>
+	<li style=display:none><img id='total_1866' src='../img/icons/etc_suede_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1866.html'>Suede</a>
+	<li style=><img id='total_1458' src='../img/icons/etc_crystal_blue_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1458.html'>Crystal: D-Grade</a>
+	<li style=><img id='total_2130' src='../img/icons/etc_crystal_ball_silver_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2130.html'>Gemstone D</a>
+	<li style=display:none><img id='total_1881' src='../img/icons/etc_powder_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1881.html'>Coarse Bone Powder</a>
+	<li style=><img id='total_1882' src='../img/icons/etc_leather_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1882.html'>Leather</a>
+	<li style=><img id='total_2923' src='../img/icons/etc_leather_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2923.html'>Manticore Skin Boot Lining</a>
+	<li style=><img id='total_1885' src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1885.html'>High Grade Suede</a>
+</ul>
 
 </td>
 </tr>
@@ -43,10 +54,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

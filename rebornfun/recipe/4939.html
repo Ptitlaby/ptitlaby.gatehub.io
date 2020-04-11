@@ -61,6 +61,29 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=display:none><img id='total_1864' src='../img/icons/etc_branch_gold_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1864.html'>Stem</a>
+	<li style=display:none><img id='total_1865' src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1865.html'>Varnish</a>
+	<li style=><img id='total_4939' src='../img/icons/etc_recipe_red_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4939.html'>Recipe: Adamantite Necklace (70%)</a>
+	<li style=display:none><img id='total_1868' src='../img/icons/etc_skein_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1868.html'>Thread</a>
+	<li style=><img id='total_4044' src='../img/icons/etc_gem_clear_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4044.html'>Thons</a>
+	<li style=display:none><img id='total_1870' src='../img/icons/etc_coal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1870.html'>Coal</a>
+	<li style=display:none><img id='total_1871' src='../img/icons/etc_charcoal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1871.html'>Charcoal</a>
+	<li style=display:none><img id='total_1872' src='../img/icons/etc_piece_bone_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1872.html'>Animal Bone</a>
+	<li style=display:none><img id='total_1873' src='../img/icons/etc_silver_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1873.html'>Silver Nugget</a>
+	<li style=><img id='total_4051' src='../img/icons/etc_jewel_box_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4051.html'>Adamantite Necklace Chain</a>
+	<li style=display:none><img id='total_1875' src='../img/icons/etc_crystal_ball_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1875.html'>Stone of Purity</a>
+	<li style=display:none><img id='total_1876' src='../img/icons/etc_mithril_ore_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1876.html'>Mithril Ore</a>
+	<li style=display:none><img id='total_1878' src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1878.html'>Braided Hemp</a>
+	<li style=display:none><img id='total_1879' src='../img/icons/etc_oil_pot_black_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1879.html'>Cokes</a>
+	<li style=><img id='total_2132' src='../img/icons/etc_bead_green_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2132.html'>Gemstone B</a>
+	<li style=display:none><img id='total_1881' src='../img/icons/etc_powder_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1881.html'>Coarse Bone Powder</a>
+	<li style=display:none><img id='total_1886' src='../img/icons/etc_silver_mold_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1886.html'>Silver Mold</a>
+	<li style=><img id='total_1887' src='../img/icons/etc_potion_clear_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1887.html'>Varnish of Purity</a>
+	<li style=><img id='total_1889' src='../img/icons/etc_compound_braid_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1889.html'>Compound Braid</a>
+	<li style=><img id='total_1892' src='../img/icons/etc_blacksmiths_frame_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1892.html'>Blacksmith's Frame</a>
+	<li style=><img id='total_1459' src='../img/icons/etc_crystal_green_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1459.html'>Crystal: C-Grade</a>
+</ul>
 
 </td>
 </tr>
@@ -69,10 +92,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

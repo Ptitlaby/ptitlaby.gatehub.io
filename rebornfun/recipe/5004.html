@@ -48,6 +48,26 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=display:none><img id='total_1888' src='../img/icons/etc_synthetic_cokes_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1888.html'>Synthetic Cokes</a>
+	<li style=><img id='total_1889' src='../img/icons/etc_compound_braid_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1889.html'>Compound Braid</a>
+	<li style=><img id='total_1893' src='../img/icons/etc_oriharukon_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1893.html'>Oriharukon</a>
+	<li style=display:none><img id='total_1864' src='../img/icons/etc_branch_gold_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1864.html'>Stem</a>
+	<li style=><img id='total_4042' src='../img/icons/etc_gem_red_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4042.html'>Enria</a>
+	<li style=><img id='total_5004' src='../img/icons/etc_recipe_red_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/5004.html'>Recipe: Staff of Evil Spirits (60%)</a>
+	<li style=display:none><img id='total_1868' src='../img/icons/etc_skein_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1868.html'>Thread</a>
+	<li style=display:none><img id='total_1870' src='../img/icons/etc_coal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1870.html'>Coal</a>
+	<li style=display:none><img id='total_1871' src='../img/icons/etc_charcoal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1871.html'>Charcoal</a>
+	<li style=display:none><img id='total_1872' src='../img/icons/etc_piece_bone_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1872.html'>Animal Bone</a>
+	<li style=display:none><img id='total_1873' src='../img/icons/etc_silver_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1873.html'>Silver Nugget</a>
+	<li style=display:none><img id='total_1874' src='../img/icons/etc_oriharukon_ore_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1874.html'>Oriharukon Ore</a>
+	<li style=><img id='total_1460' src='../img/icons/etc_crystal_red_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1460.html'>Crystal: B-Grade</a>
+	<li style=><img id='total_2132' src='../img/icons/etc_bead_green_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2132.html'>Gemstone B</a>
+	<li style=><img id='total_4118' src='../img/icons/etc_squares_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4118.html'>Evil Spirit Head</a>
+	<li style=display:none><img id='total_1879' src='../img/icons/etc_oil_pot_black_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1879.html'>Cokes</a>
+	<li style=display:none><img id='total_1878' src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1878.html'>Braided Hemp</a>
+	<li style=><img id='total_1881' src='../img/icons/etc_powder_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1881.html'>Coarse Bone Powder</a>
+</ul>
 
 </td>
 </tr>
@@ -56,10 +76,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

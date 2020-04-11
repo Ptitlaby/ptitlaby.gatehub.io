@@ -51,6 +51,24 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=><img id='total_4069' src='../img/icons/etc_leather_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4069.html'>Tunic of Zubei Fabric</a>
+	<li style=><img id='total_1894' src='../img/icons/etc_crafted_leather_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1894.html'>Crafted Leather</a>
+	<li style=><img id='total_1895' src='../img/icons/etc_metallic_fiber_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1895.html'>Metallic Fiber</a>
+	<li style=display:none><img id='total_1865' src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1865.html'>Varnish</a>
+	<li style=display:none><img id='total_1867' src='../img/icons/etc_leather_brown_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1867.html'>Animal Skin</a>
+	<li style=display:none><img id='total_1868' src='../img/icons/etc_skein_white_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1868.html'>Thread</a>
+	<li style=display:none><img id='total_1869' src='../img/icons/etc_lump_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1869.html'>Iron Ore</a>
+	<li style=display:none><img id='total_1870' src='../img/icons/etc_coal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1870.html'>Coal</a>
+	<li style=><img id='total_4043' src='../img/icons/etc_gem_blue_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4043.html'>Asofe</a>
+	<li style=display:none><img id='total_1873' src='../img/icons/etc_silver_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1873.html'>Silver Nugget</a>
+	<li style=><img id='total_1459' src='../img/icons/etc_crystal_green_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1459.html'>Crystal: C-Grade</a>
+	<li style=><img id='total_2132' src='../img/icons/etc_bead_green_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2132.html'>Gemstone B</a>
+	<li style=><img id='total_4949' src='../img/icons/etc_recipe_red_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4949.html'>Recipe: Tunic of Zubei (60%)</a>
+	<li style=display:none><img id='total_1880' src='../img/icons/etc_lump_black_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1880.html'>Steel</a>
+	<li style=display:none><img id='total_1882' src='../img/icons/etc_leather_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1882.html'>Leather</a>
+	<li style=display:none><img id='total_1884' src='../img/icons/etc_skein_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1884.html'>Cord</a>
+</ul>
 
 </td>
 </tr>
@@ -59,10 +77,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

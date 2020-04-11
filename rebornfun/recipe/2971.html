@@ -37,6 +37,18 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=display:none><img id='total_1864' src='../img/icons/etc_branch_gold_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1864.html'>Stem</a>
+	<li style=display:none><img id='total_1865' src='../img/icons/etc_pouch_yellow_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1865.html'>Varnish</a>
+	<li style=display:none><img id='total_1869' src='../img/icons/etc_lump_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1869.html'>Iron Ore</a>
+	<li style=display:none><img id='total_1870' src='../img/icons/etc_coal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1870.html'>Coal</a>
+	<li style=><img id='total_2130' src='../img/icons/etc_crystal_ball_silver_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2130.html'>Gemstone D</a>
+	<li style=display:none><img id='total_1878' src='../img/icons/etc_braided_hemp_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1878.html'>Braided Hemp</a>
+	<li style=><img id='total_1880' src='../img/icons/etc_lump_black_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1880.html'>Steel</a>
+	<li style=><img id='total_1883' src='../img/icons/etc_mold_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1883.html'>Steel Mold</a>
+	<li style=><img id='total_2918' src='../img/icons/etc_plate_silver_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/2918.html'>Mithril Scale Gaiters Material</a>
+	<li style=><img id='total_1458' src='../img/icons/etc_crystal_blue_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1458.html'>Crystal: D-Grade</a>
+</ul>
 
 </td>
 </tr>
@@ -45,10 +57,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

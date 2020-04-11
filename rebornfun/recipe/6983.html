@@ -31,6 +31,14 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=><img id='total_6915' src='../img/icons/etc_fang_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/6915.html'>Thin Fish Bone</a>
+	<li style=><img id='total_6916' src='../img/icons/etc_fang_ivory_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/6916.html'>Thick Fish Bone</a>
+	<li style=><img id='total_6983' src='../img/icons/etc_recipe_green_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/6983.html'>Recipe: Greater Dye of DEX (Dex+2 Con-2) (100%)</a>
+	<li style=display:none><img id='total_6908' src='../img/icons/etc_fish_oil_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/6908.html'>Fish Oil</a>
+	<li style=display:none><img id='total_6909' src='../img/icons/etc_fish_oil_i01.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/6909.html'>Greater Fish Oil</a>
+	<li style=><img id='total_6910' src='../img/icons/etc_fish_oil_i02.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/6910.html'>Premium Fish Oil</a>
+</ul>
 
 </td>
 </tr>
@@ -39,10 +47,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             

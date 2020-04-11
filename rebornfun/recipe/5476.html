@@ -36,6 +36,17 @@
 </ul>
 </td>
 <td valign='top'>
+<ul id='totals'>
+	<li style=display:none><img id='total_1888' src='../img/icons/etc_synthetic_cokes_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1888.html'>Synthetic Cokes</a>
+	<li style=display:none><img id='total_4039' src='../img/icons/etc_reagent_red_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4039.html'>Mold Glue</a>
+	<li style=><img id='total_4040' src='../img/icons/etc_reagent_gold_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4040.html'>Mold Lubricant</a>
+	<li style=><img id='total_4044' src='../img/icons/etc_gem_clear_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4044.html'>Thons</a>
+	<li style=><img id='total_4046' src='../img/icons/etc_lump_dark_gray_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/4046.html'>Maestro Anvil Lock</a>
+	<li style=display:none><img id='total_1870' src='../img/icons/etc_coal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1870.html'>Coal</a>
+	<li style=display:none><img id='total_1871' src='../img/icons/etc_charcoal_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1871.html'>Charcoal</a>
+	<li style=display:none><img id='total_1874' src='../img/icons/etc_oriharukon_ore_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1874.html'>Oriharukon Ore</a>
+	<li style=display:none><img id='total_1879' src='../img/icons/etc_oil_pot_black_i00.png' style='position:relative; top:10px;' class='img_border'> x <a href='../item/1879.html'>Cokes</a>
+</ul>
 
 </td>
 </tr>
@@ -44,10 +55,19 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <script>
+                  var totalUL = document.getElementById("totals")
+                  var totalLIs = ul.getElementsByTagName('li');
                   function myFunction(elem) {
                     var ul = $(elem).parent().parent().find('.'+elem.id)[0];
-                    if (ul.style.display == "none") { ul.style.display = ""; elem.src = '../img/etc/collapse.png';}
-                    else { ul.style.display = "none"; elem.src = '../img/etc/expand.png'; }
+                    if (ul.style.display == "none") {
+                        ul.style.display = "";
+                        elem.src = '../img/etc/collapse.png';
+                    }
+                    else {
+
+                        ul.style.display = "none";
+                        elem.src = '../img/etc/expand.png';
+                    }
                   };
                 </script>
             
