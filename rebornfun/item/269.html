@@ -1,0 +1,738 @@
+<html>
+<title>Blood Tornado</title>
+
+        <head>
+            <link href="../css/pmfun.css" rel="stylesheet" type="text/css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+<body>
+
+            <div class="searchbar">
+                <form class="example" action="../search.html">
+                  <input type="text" id="searchTxt" placeholder="Search.." name="search">
+                  <button id="searchBtn"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        
+
+            <div class="content">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="17"><img src="../img/etc/tab_1.gif" width="17" height="21"></td>
+                <td background="../img/etc/tab_1_fon.gif" align="center"><img src="../img/etc/tab_ornament_top.gif" width="445" height="21"></td>
+                <td width="17"><img src="../img/etc/tab_2.gif" width="17" height="21"></td>
+              </tr>
+              <tr>
+                <td background="../img/etc/tab_left_fon.gif"></td>
+        
+
+        <td valign="top" bgcolor="#1E4863">
+              <table width="100%" border="0" cellpadding="5" cellspacing="0" class="show_list">
+                <tbody id="itemDataTable"><tr><td colspan="4"><img src="../img/etc/blank.gif" height="8"><br><img src="../img/icons/weapon_blood_tornado_i00.png" align="absmiddle" class="img_border" alt="Blood Tornado" title="Blood Tornado">
+        		<b class="txtbig">Blood Tornado</b> (crystals: 1464 A) <br><img src="../img/etc/blank.gif" height="8"><br>
+        
+
+
+                    <tr>
+                      <td class="first_line" align="left">NPC Name</td>
+                      <td class="first_line" align="left">Level
+                      <div class="popup">
+                          <img src="../img/etc/filter.png" height="15" style="cursor:pointer" onclick="myFunction()">
+                          <span class="popuptext" id="myPopup" style=>
+                            <div>
+                              <div>
+                                <input id="levelMin" type="number" min="1" max="90" value="1" onchange="levelFilter()"/> - <input id="levelMax" type="number" min="1" max="90" value="90" onchange="levelFilter()"/>
+                              </div>
+                            </div>
+                          </span>
+                      </div>
+                      </td>
+                      <td class="first_line">Type</td>
+                      <td class="first_line">Quantity</td>
+                      <td class="first_line">Chance</td>
+                    </tr>
+        
+
+                <tr>
+                  <td colspan="4" align="left"><b>Drop</b></td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/25467.html" title="View Gorgolos drop and spoil">
+                        Gorgolos
+                    </a>
+                  
+                    <a href="../loc/25467.html" title="Gorgolos location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Gorgolos location on the map" title="Gorgolos location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">64</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 110</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/25255.html" title="View Gargoyle Lord Tiphon drop and spoil">
+                        Gargoyle Lord Tiphon
+                    </a>
+                  
+                    <a href="../loc/25255.html" title="Gargoyle Lord Tiphon location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Gargoyle Lord Tiphon location on the map" title="Gargoyle Lord Tiphon location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">65</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">2.05%</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21449.html" title="View Raider of Pastureland drop and spoil">
+                        Raider of Pastureland
+                    </a>
+                  
+                    <a href="../loc/21449.html" title="Raider of Pastureland location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Raider of Pastureland location on the map" title="Raider of Pastureland location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">68</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 200,000</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21489.html" title="View Alpen Cougar drop and spoil">
+                        Alpen Cougar
+                    </a>
+                  
+                    <a href="../loc/21489.html" title="Alpen Cougar location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Alpen Cougar location on the map" title="Alpen Cougar location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">69</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 500,000</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21570.html" title="View Ghost of Betrayer drop and spoil">
+                        Ghost of Betrayer
+                    </a>
+                  
+                    <a href="../loc/21570.html" title="Ghost of Betrayer location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Ghost of Betrayer location on the map" title="Ghost of Betrayer location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">69</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 200,000</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21751.html" title="View Dark Omen Invader Soldier drop and spoil">
+                        Dark Omen Invader Soldier
+                    </a>
+                  
+                  </td>
+                  <td class="npcLevel" align="left">70</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 83,333</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21767.html" title="View Dark Omen Invader Elite Soldier drop and spoil">
+                        Dark Omen Invader Elite Soldier
+                    </a>
+                  
+                  </td>
+                  <td class="npcLevel" align="left">70</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 333,333</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21578.html" title="View Behemoth Zombie drop and spoil">
+                        Behemoth Zombie
+                    </a>
+                  
+                    <a href="../loc/21578.html" title="Behemoth Zombie location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Behemoth Zombie location on the map" title="Behemoth Zombie location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">71</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 166,667</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21581.html" title="View Bone Puppeteer drop and spoil">
+                        Bone Puppeteer
+                    </a>
+                  
+                    <a href="../loc/21581.html" title="Bone Puppeteer location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Bone Puppeteer location on the map" title="Bone Puppeteer location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">71</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 142,857</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21301.html" title="View Gaze of Nightmare drop and spoil">
+                        Gaze of Nightmare
+                    </a>
+                  
+                    <a href="../loc/21301.html" title="Gaze of Nightmare location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Gaze of Nightmare location on the map" title="Gaze of Nightmare location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">72</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 66,667</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21587.html" title="View Vampire Warrior drop and spoil">
+                        Vampire Warrior
+                    </a>
+                  
+                    <a href="../loc/21587.html" title="Vampire Warrior location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Vampire Warrior location on the map" title="Vampire Warrior location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">72</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 142,857</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21314.html" title="View Hot Springs Bandersnatchling drop and spoil">
+                        Hot Springs Bandersnatchling
+                    </a>
+                  
+                    <a href="../loc/21314.html" title="Hot Springs Bandersnatchling location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Hot Springs Bandersnatchling location on the map" title="Hot Springs Bandersnatchling location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 100,000</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21590.html" title="View Vampire Magister drop and spoil">
+                        Vampire Magister
+                    </a>
+                  
+                    <a href="../loc/21590.html" title="Vampire Magister location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Vampire Magister location on the map" title="Vampire Magister location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 166,667</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21591.html" title="View Vampire Magister drop and spoil">
+                        Vampire Magister
+                    </a>
+                  
+                    <a href="../loc/21591.html" title="Vampire Magister location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Vampire Magister location on the map" title="Vampire Magister location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 166,667</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21592.html" title="View Vampire Magister drop and spoil">
+                        Vampire Magister
+                    </a>
+                  
+                    <a href="../loc/21592.html" title="Vampire Magister location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Vampire Magister location on the map" title="Vampire Magister location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 200,000</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21593.html" title="View Vampire Warlord drop and spoil">
+                        Vampire Warlord
+                    </a>
+                  
+                    <a href="../loc/21593.html" title="Vampire Warlord location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Vampire Warlord location on the map" title="Vampire Warlord location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 142,857</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21594.html" title="View Vampire Warlord drop and spoil">
+                        Vampire Warlord
+                    </a>
+                  
+                    <a href="../loc/21594.html" title="Vampire Warlord location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Vampire Warlord location on the map" title="Vampire Warlord location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 142,857</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21595.html" title="View Vampire Warlord drop and spoil">
+                        Vampire Warlord
+                    </a>
+                  
+                    <a href="../loc/21595.html" title="Vampire Warlord location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Vampire Warlord location on the map" title="Vampire Warlord location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 200,000</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21761.html" title="View Dark Omen Invader Disciple drop and spoil">
+                        Dark Omen Invader Disciple
+                    </a>
+                  
+                  </td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Passive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 90,909</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/22106.html" title="View Spiked Stakato Worker drop and spoil">
+                        Spiked Stakato Worker
+                    </a>
+                  
+                    <a href="../loc/22106.html" title="Spiked Stakato Worker location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Spiked Stakato Worker location on the map" title="Spiked Stakato Worker location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">73</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 125,000</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21306.html" title="View Disciples of Protection drop and spoil">
+                        Disciples of Protection
+                    </a>
+                  
+                    <a href="../loc/21306.html" title="Disciples of Protection location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Disciples of Protection location on the map" title="Disciples of Protection location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">74</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 41,667</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21317.html" title="View Hot Springs Atroxspawn drop and spoil">
+                        Hot Springs Atroxspawn
+                    </a>
+                  
+                    <a href="../loc/21317.html" title="Hot Springs Atroxspawn location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Hot Springs Atroxspawn location on the map" title="Hot Springs Atroxspawn location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">74</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 100,000</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21752.html" title="View Dark Omen Invader Soldier drop and spoil">
+                        Dark Omen Invader Soldier
+                    </a>
+                  
+                  </td>
+                  <td class="npcLevel" align="left">75</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 71,429</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21762.html" title="View Dark Omen Invader Berserker drop and spoil">
+                        Dark Omen Invader Berserker
+                    </a>
+                  
+                  </td>
+                  <td class="npcLevel" align="left">75</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 83,333</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21764.html" title="View Dark Omen Invader Elite Soldier drop and spoil">
+                        Dark Omen Invader Elite Soldier
+                    </a>
+                  
+                  </td>
+                  <td class="npcLevel" align="left">75</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 40,000</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/29020.html" title="View Baium drop and spoil">
+                        Baium
+                    </a>
+                  
+                    <a href="../loc/29020.html" title="Baium location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Baium location on the map" title="Baium location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">75</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">6%</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/21321.html" title="View Hot Springs Atrox drop and spoil">
+                        Hot Springs Atrox
+                    </a>
+                  
+                    <a href="../loc/21321.html" title="Hot Springs Atrox location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Hot Springs Atrox location on the map" title="Hot Springs Atrox location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">76</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 83,333</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21326.html" title="View Grazing Kookaburra drop and spoil">
+                        Grazing Kookaburra
+                    </a>
+                  
+                    <a href="../loc/21326.html" title="Grazing Kookaburra location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Grazing Kookaburra location on the map" title="Grazing Kookaburra location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">77</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 90,909</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/22116.html" title="View Spiked Stakato Drone drop and spoil">
+                        Spiked Stakato Drone
+                    </a>
+                  
+                    <a href="../loc/22116.html" title="Spiked Stakato Drone location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Spiked Stakato Drone location on the map" title="Spiked Stakato Drone location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">77</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 125,000</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/21353.html" title="View Varka Silenos Scout drop and spoil">
+                        Varka Silenos Scout
+                    </a>
+                  
+                    <a href="../loc/21353.html" title="Varka Silenos Scout location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Varka Silenos Scout location on the map" title="Varka Silenos Scout location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">78</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">1 / 83,333</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/29019.html" title="View Antharas drop and spoil">
+                        Antharas
+                    </a>
+                  
+                    <a href="../loc/29019.html" title="Antharas location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Antharas location on the map" title="Antharas location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">79</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1-2</td>
+                  <td class="dropChance">25%</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/29066.html" title="View Antharas drop and spoil">
+                        Antharas
+                    </a>
+                  
+                  </td>
+                  <td class="npcLevel" align="left">79</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1-2</td>
+                  <td class="dropChance">25%</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/29067.html" title="View Antharas drop and spoil">
+                        Antharas
+                    </a>
+                  
+                  </td>
+                  <td class="npcLevel" align="left">79</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1-2</td>
+                  <td class="dropChance">25%</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/29068.html" title="View Antharas drop and spoil">
+                        Antharas
+                    </a>
+                  
+                  </td>
+                  <td class="npcLevel" align="left">79</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1-2</td>
+                  <td class="dropChance">25%</td>
+                </tr>
+        
+
+                <tr class="itemData" bgcolor=#1C425B>
+                  <td class="npcName" align="left">
+                    <a href="../npc/29028.html" title="View Valakas drop and spoil">
+                        Valakas
+                    </a>
+                  
+                    <a href="../loc/29028.html" title="Valakas location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Valakas location on the map" title="Valakas location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">85</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1-2</td>
+                  <td class="dropChance">25%</td>
+                </tr>
+        
+
+                <tr class="itemData">
+                  <td class="npcName" align="left">
+                    <a href="../npc/29047.html" title="View Scarlet van Halisha drop and spoil">
+                        Scarlet van Halisha
+                    </a>
+                  
+                    <a href="../loc/29047.html" title="Scarlet van Halisha location on the map">
+                        <img src="../img/etc/flag.gif" border="0" align="absmiddle" alt="Scarlet van Halisha location on the map" title="Scarlet van Halisha location on the map">
+                    </a>
+        
+                  </td>
+                  <td class="npcLevel" align="left">90</td>
+                  <td class="npcAgro">Aggressive</td>
+                  <td class="dropCount">1</td>
+                  <td class="dropChance">6.25%</td>
+                </tr>
+        <tr></tr>
+
+                <tr>
+                  <td colspan="4" align="left"><b>Spoil</b></td>
+                </tr>
+        
+
+
+              </tbody></table>
+            </td>
+            <td background="../img/etc/tab_right_fon.gif"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../img/etc/tab_3.gif" width="17" height="38"></td>
+                    <td background="../img/etc/tab_bottom_fon.gif">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody><tr>
+                          <td><img src="../img/etc/tab_4.gif" width="24" height="38"></td>
+                          <td align="right"><img src="../img/etc/tab_5.gif" width="24" height="38"></td>
+                        </tr>
+                      </tbody></table>
+                    </td>
+                    <td><img src="../img/etc/tab_6.gif" width="17" height="38"></td>
+                  </tr>
+                </tbody></table>
+            </div>
+        
+</tbody></table>
+</td>
+</body>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                function myFunction() {
+                  var popup = document.getElementById("myPopup");
+                  popup.classList.toggle("show");
+                };
+
+                var itemDataTable = document.getElementById("itemDataTable");
+                var itemDatas = itemDataTable.getElementsByClassName("itemData");
+
+                function levelFilter() {
+                  var npcLevel;
+                  var levelMin = parseInt(document.getElementById("levelMin").value);
+                  var levelMax = parseInt(document.getElementById("levelMax").value);
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
+                    if ((npcLevel < levelMin) || (npcLevel > levelMax)) { itemData.style.display = "none" }
+                    else { itemData.style.display = "" };
+                  });
+                }
+
+                $(document).ready(function() {
+                  var levelMin = 100;
+                  var levelMax = 0;
+                  $.each(itemDatas, function(index, itemData) {
+                    npcLevel = parseInt($(itemData.getElementsByClassName("npcLevel")[0]).text());
+                    if (npcLevel < levelMin) { levelMin = npcLevel };
+                    if (npcLevel > levelMax) { levelMax = npcLevel };
+
+                    document.getElementById("levelMin").value = levelMin;
+                    document.getElementById("levelMax").value = levelMax;
+                  });
+                })
+                </script>
+            
+</html>
